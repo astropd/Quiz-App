@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/css/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="static/js/script.js"></script>
+    <title>CodeWhiz</title>
+  </head>
+  <body class="bg-gray-900">
+    <header class="absolute top-0 right-0 left-0 z-50 backdrop-opacity-50">
+      <nav class="container mx-auto px-6 py-3">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center space-x-4">
+            <a href="#" class="text-white text-xl font-bold hover:text-gray-200"
+              >CodeWhiz</a
+            >
+          </div>
+          <div class="flex items-center space-x-4">
+            <a href="/quiz" class="text-white text-excel">Quiz</a>
+            <a href="#" class="text-white text-excel">Topic</a>
+            <a href="#" class="text-white text-excel">Leaderboard</a>
+          </div>
+          <div class="flex space-x-4">
+            <h3 class="text-white text-excel">{{ email }}</h3>
+            <a href="/logout" class="text-white cursor-pointer">Logout</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-section">
+        <img
+          src="../static/imgs/wallpaper.jpg"
+          class="absolute w-full h-full"
+        />
+        <div class="absolute flex items-center justify-center z-10 inset-0">
+          <div class="text-center text-white">
+            <h1 class="text-4xl mb-4">Start Quizing</h1>
+            <a
+              onclick="openModalSignup()"
+              class="bg-green-500 font-bold rounded-full text-lg py-3 px-6"
+              >Get Started</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-gray-800 text-gray-400">
+      <div class="container mx-auto px-6 py-8 text-center">
+        <p class="mb-2">The fun way for middle schoolers to learn coding!</p>
+        <p class="text-sm">&copy; 2024 CodeWhiz. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="static/js/script.js"></script>
+  </body>
+</html>
